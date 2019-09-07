@@ -1,0 +1,37 @@
+{
+  "name": "@typeheim/freyja",
+  "private": true,
+  "version": "dev",
+  "description": "Spec Way framework for TS",
+  "author": "Dima Kolodko",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --forceExit --coverage --verbose",
+    "watch-test": "npm run test -- --watchAll",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@types/request": "^2.48.1",
+    "@types/shelljs": "^0.8.5",
+    "@types/supertest": "^2.0.7",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.0.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "shelljs": "^0.8.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}
